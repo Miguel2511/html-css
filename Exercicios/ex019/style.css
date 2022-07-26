@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+em HTML 'id' = '#' em CSS (ÚNICO)
+em HTML 'class' = '.' em CSS
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(55, 194, 148, 0.247);
+    margin: auto;
+    padding: 10px;
+    max-width: 1300px;
+    min-width: 400px;
+
+}
+.sub-titulo{
+    color: rgba(0, 0, 0, 0.774);
+    text-decoration: underline;
+}
+#principal {
+    color: azure;
+    background-color: rgb(10, 80, 57);
+    text-align: center;
+}
+.basico {
+    color: rgb(18, 136, 97) ;
+}
+.intermediario {
+    color: rgb(179, 179, 6);
+}
+.avancado {
+    color: brown;
+}
+p {
+    text-indent: 20px;
+    text-align: justify;
+}
+.destaque {
+    background-color: rgba(255, 255, 0, 0.329);
+}
