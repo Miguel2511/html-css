@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption {
+            background-color: rgba(119, 118, 118, 0.479);
+            padding: 10px;
+            font-weight: bold;
+        }
+        td {
+            border: 1px solid black;
+            padding: 6px;
+            text-align: left;
+        }
+        th {
+            text-align: center;
+            border: 1px solid black;
+            padding: 6px;
+        }
+        td.numero {
+            text-align: right;
+        }
+        thead, tfoot {
+            background-color: rgb(85, 85, 85);
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(85, 85, 85);
+            
+        }
+        tbody tr:nth-child(odd) {
+            background-color: rgba(128, 128, 128, 0.397);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION (LEGENDA)
+            THEAD (CABEÇA)
+                TR, TD, TH
+            TBODY (CORPO)
+                TR, TD, TH
+            TFOOT (PÉ)
+                TR, TD, TH
+            SCOPE
+            col, row (Título da coluna, linha)
+    -->
+    <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>123.573.802</strong></td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46.649.132</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21.411.923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.463.349</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.985.284</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do sul</td>
+                <td class="numero">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11.597.484</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46.649.132</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21.411.923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.463.349</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.985.284</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do sul</td>
+                <td class="numero">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11.597.484</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46.649.132</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21.411.923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.463.349</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.985.284</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do sul</td>
+                <td class="numero">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11.597.484</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46.649.132</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21.411.923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.463.349</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.985.284</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do sul</td>
+                <td class="numero">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11.597.484</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
